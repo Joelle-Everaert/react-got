@@ -1,5 +1,5 @@
-// @import './variables.scss';
-// @import './mixin.scss';
+@import './variables.scss';
+@import './mixin.scss';
 // IMPORT SCSS
 
 
@@ -10,7 +10,7 @@ body {
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    // @include bg; scss
+   
   }
   
   .title{
@@ -19,6 +19,17 @@ body {
     
   }
   
-  li{
-    list-style-type: none;
+  .card{
+      @include card;
+        h2{
+          color:$title;
+        }
+        p{
+            font-style:italic; 
+            
+        }
+  }
+
+  .container{
+      @include container;
   }
