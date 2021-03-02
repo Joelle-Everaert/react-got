@@ -27,7 +27,7 @@ componentDidMount(){
   }
   
   render() {
-    if(this.state.data.length === 0 && this.state.loading == false){
+    if(this.state.data.length === 0 && this.state.loading === false){
       return <div className="title">No result</div>
     }
     if(this.state.loading == true){
@@ -40,7 +40,7 @@ componentDidMount(){
         <div className="container">
         {this.state.data.map(house=>(
           <div className="card">
-            <h2>{house.name}</h2>
+            <h2 key={house.name}>{house.name}</h2>
             <p>{house.coatOfArms}</p>
             <h3>Region: {house.region}</h3>
             </div>
