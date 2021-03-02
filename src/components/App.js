@@ -28,7 +28,8 @@ componentDidMount(){
     return (
       <div className="title">
         <h1>GAME OF THRONE</h1>
-        <p>Name: {this.state.name.name}</p>
+        <p>Name:{this.state.name.name}</p>
+
         <p>Gender: {this.state.name.gender}</p>
         <p>Titles: {this.state.name.titles}</p>
         <ul>
