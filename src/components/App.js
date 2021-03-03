@@ -30,7 +30,7 @@ componentDidMount(){
     if(this.state.data.length === 0 && this.state.loading === false){
       return <div className="title">No result</div>
     }
-    if(this.state.loading == true){
+    if(this.state.loading === true){
       return <div className="title">Loading ........</div>
     }
 
@@ -39,8 +39,8 @@ componentDidMount(){
         <h1>GAME OF THRONE HOUSES</h1>
         <div className="container">
         {this.state.data.map(house=>(
-          <div className="card">
-            <h2 key={house.name}>{house.name}</h2>
+          <div className="card" key={house.name}>
+            <h2>{house.name}</h2>
             <p>{house.coatOfArms}</p>
             <h3>Region: {house.region}</h3>
             </div>
